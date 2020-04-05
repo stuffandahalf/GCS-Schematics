@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1459,17 +1459,6 @@ Text Label 650  3200 0    50   ~ 0
 XTAL
 Text Label 650  3300 0    50   ~ 0
 EXTAL
-$Comp
-L Oscillator:ACO-xxxMHz X1
-U 1 1 5F437A2B
-P 1800 4400
-F 0 "X1" V 1450 4450 50  0000 R CNN
-F 1 "ACO-xxxMHz" V 1550 4600 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 2250 4050 50  0001 C CNN
-F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 1700 4400 50  0001 C CNN
-	1    1800 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2100 4400 2300 4400
 Text Label 2300 4400 2    50   ~ 0
@@ -1558,6 +1547,218 @@ Wire Wire Line
 Connection ~ 850  4700
 Wire Wire Line
 	700  4350 650  4350
+Connection ~ 650  4350
+Wire Wire Line
+	650  4350 650  4400
+$Comp
+L Oscillator:CXO_DIP8 X1
+U 1 1 5E8C3B40
+P 1800 4400
+F 0 "X1" H 1950 4750 50  0000 L CNN
+F 1 "CXO_DIP8" H 1850 4650 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 2250 4050 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 1700 4400 50  0001 C CNN
+	1    1800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L gcs:29C256 U?
+U 1 1 5E91EC50
+P 5450 5350
+F 0 "U?" H 5450 6428 50  0000 C CNN
+F 1 "29C256" H 5450 6337 50  0000 C CNN
+F 2 "DIP28" H 5450 5350 50  0001 C CIN
+F 3 "" H 5450 5350 50  0001 C CNN
+	1    5450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4600 4950 4600
+Wire Wire Line
+	4750 4700 4950 4700
+Wire Wire Line
+	4750 4800 4950 4800
+Wire Wire Line
+	4750 4900 4950 4900
+Wire Wire Line
+	4750 5000 4950 5000
+Wire Wire Line
+	4750 5100 4950 5100
+Wire Wire Line
+	4750 5200 4950 5200
+Wire Wire Line
+	4750 5300 4950 5300
+Wire Wire Line
+	4750 5400 4950 5400
+Wire Wire Line
+	4750 5500 4950 5500
+Wire Wire Line
+	4750 5600 4950 5600
+Wire Wire Line
+	4750 5700 4950 5700
+Wire Wire Line
+	4750 5800 4950 5800
+Wire Wire Line
+	4950 5900 4750 5900
+Wire Wire Line
+	4750 6000 4950 6000
+Entry Wire Line
+	4650 4500 4750 4600
+Entry Wire Line
+	4650 4600 4750 4700
+Entry Wire Line
+	4650 4700 4750 4800
+Entry Wire Line
+	4650 4800 4750 4900
+Entry Wire Line
+	4650 4900 4750 5000
+Entry Wire Line
+	4650 5000 4750 5100
+Entry Wire Line
+	4650 5100 4750 5200
+Entry Wire Line
+	4650 5200 4750 5300
+Entry Wire Line
+	4650 5300 4750 5400
+Entry Wire Line
+	4650 5400 4750 5500
+Entry Wire Line
+	4650 5500 4750 5600
+Entry Wire Line
+	4650 5600 4750 5700
+Entry Wire Line
+	4650 5700 4750 5800
+Wire Bus Line
+	4650 4300 4850 4300
+Text Label 4850 4300 2    50   ~ 0
+ABUS
+Wire Wire Line
+	5950 5700 6150 5700
+Text Label 6150 5700 2    50   ~ 0
+~ROM
+Text Label 4750 4600 0    50   ~ 0
+A0
+Text Label 4750 4700 0    50   ~ 0
+A1
+Text Label 4750 4800 0    50   ~ 0
+A2
+Text Label 4750 4900 0    50   ~ 0
+A3
+Text Label 4750 5000 0    50   ~ 0
+A4
+Text Label 4750 5100 0    50   ~ 0
+A5
+Text Label 4750 5200 0    50   ~ 0
+A6
+Text Label 4750 5300 0    50   ~ 0
+A7
+Text Label 4750 5400 0    50   ~ 0
+A8
+Text Label 4750 5500 0    50   ~ 0
+A9
+Text Label 4750 5600 0    50   ~ 0
+A10
+Text Label 4750 5700 0    50   ~ 0
+A11
+Text Label 4750 5800 0    50   ~ 0
+A12
+Wire Wire Line
+	5450 4450 5800 4450
+Text Label 5800 4450 2    50   ~ 0
++5V
+Wire Wire Line
+	4750 5900 4750 6000
+Connection ~ 4750 6000
+Wire Wire Line
+	4750 6000 4750 6200
+Wire Wire Line
+	5450 6150 5450 6200
+Wire Wire Line
+	4750 6200 5450 6200
+Connection ~ 5450 6200
+Wire Wire Line
+	5450 6200 5450 6300
+Text Label 5450 6300 0    50   ~ 0
+GND
+Wire Wire Line
+	5950 5550 6150 5550
+Text Label 6150 5550 2    50   ~ 0
+~W
+Wire Wire Line
+	6150 5450 5950 5450
+Text Label 6150 5450 2    50   ~ 0
+~R
+Wire Wire Line
+	5950 5300 6150 5300
+Wire Wire Line
+	6150 5200 5950 5200
+Wire Wire Line
+	6150 5100 5950 5100
+Wire Wire Line
+	6150 5000 5950 5000
+Wire Wire Line
+	6150 4900 5950 4900
+Wire Wire Line
+	6150 4800 5950 4800
+Wire Wire Line
+	6150 4700 5950 4700
+Wire Wire Line
+	6150 4600 5950 4600
+Entry Wire Line
+	6150 5300 6250 5400
+Entry Wire Line
+	6150 5200 6250 5300
+Entry Wire Line
+	6150 5100 6250 5200
+Entry Wire Line
+	6150 5000 6250 5100
+Entry Wire Line
+	6150 4900 6250 5000
+Entry Wire Line
+	6150 4800 6250 4900
+Entry Wire Line
+	6150 4700 6250 4800
+Entry Wire Line
+	6150 4600 6250 4700
+Wire Bus Line
+	6250 4300 6050 4300
+Text Label 6050 4300 0    50   ~ 0
+DBUS
+Text Label 6150 4600 2    50   ~ 0
+D0
+Text Label 6150 4700 2    50   ~ 0
+D1
+Text Label 6150 4800 2    50   ~ 0
+D2
+Text Label 6150 4900 2    50   ~ 0
+D3
+Text Label 6150 5000 2    50   ~ 0
+D4
+Text Label 6150 5100 2    50   ~ 0
+D5
+Text Label 6150 5200 2    50   ~ 0
+D6
+Text Label 6150 5300 2    50   ~ 0
+D7
+$Comp
+L Device:C C?
+U 1 1 5ED52A94
+P 5150 7350
+F 0 "C?" H 5265 7396 50  0000 L CNN
+F 1 "100nF" H 5265 7305 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 5188 7200 50  0001 C CNN
+F 3 "~" H 5150 7350 50  0001 C CNN
+	1    5150 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7200 5150 7000
+Wire Wire Line
+	5150 7500 5150 7700
+Text Label 5150 7000 0    50   ~ 0
++5V
+Text Label 5150 7700 0    50   ~ 0
+GND
 Wire Bus Line
 	2650 4500 2650 4650
 Wire Bus Line
@@ -1577,10 +1778,11 @@ Wire Bus Line
 Wire Bus Line
 	650  750  650  1600
 Wire Bus Line
+	6250 4300 6250 5400
+Wire Bus Line
+	4650 4300 4650 5700
+Wire Bus Line
 	2750 750  2750 3000
 Wire Bus Line
 	2250 750  2250 2400
-Connection ~ 650  4350
-Wire Wire Line
-	650  4350 650  4400
 $EndSCHEMATC

@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 29C256
+D EEPROM 32K x  8 bits, DIP28 600mil
+K EEPROM 32KB CMOS ROM
+$ENDCMP
+#
 #End Doc Library
