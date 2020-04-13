@@ -2164,6 +2164,185 @@ F 3 "" H 5450 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1950 3200
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J9
+U 1 1 5E96F4B9
+P 10500 3600
+F 0 "J9" H 10550 4717 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 10550 4626 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 10500 3600 50  0001 C CNN
+F 3 "~" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 4600 10150 4600
+Wire Wire Line
+	10150 4500 10300 4500
+Wire Wire Line
+	10150 4400 10300 4400
+Wire Wire Line
+	10150 4300 10300 4300
+Wire Wire Line
+	10150 4200 10300 4200
+Wire Wire Line
+	10150 4100 10300 4100
+Wire Wire Line
+	10150 4000 10300 4000
+Wire Wire Line
+	10150 3900 10300 3900
+Wire Wire Line
+	10150 3800 10300 3800
+Wire Wire Line
+	10150 3700 10300 3700
+Wire Wire Line
+	10150 3600 10300 3600
+Wire Wire Line
+	10150 3500 10300 3500
+Wire Wire Line
+	10150 3400 10300 3400
+Wire Wire Line
+	10150 3300 10300 3300
+Entry Wire Line
+	10050 4700 10150 4600
+Entry Wire Line
+	10050 4600 10150 4500
+Entry Wire Line
+	10050 4500 10150 4400
+Entry Wire Line
+	10050 4400 10150 4300
+Entry Wire Line
+	10050 4300 10150 4200
+Entry Wire Line
+	10050 4200 10150 4100
+Entry Wire Line
+	10050 4100 10150 4000
+Entry Wire Line
+	10050 4000 10150 3900
+Entry Wire Line
+	10050 3900 10150 3800
+Entry Wire Line
+	10050 3800 10150 3700
+Entry Wire Line
+	10050 3700 10150 3600
+Entry Wire Line
+	10050 3600 10150 3500
+Entry Wire Line
+	10050 3500 10150 3400
+Entry Wire Line
+	10050 3400 10150 3300
+Wire Bus Line
+	10050 4900 10300 4900
+Text Label 10300 4900 2    50   ~ 0
+ABUS
+Wire Wire Line
+	10800 3500 10950 3500
+Wire Wire Line
+	10950 3400 10800 3400
+Wire Wire Line
+	10800 3300 10950 3300
+Wire Wire Line
+	10950 3200 10800 3200
+Wire Wire Line
+	10950 3100 10800 3100
+Wire Wire Line
+	10950 3000 10800 3000
+Wire Wire Line
+	10950 2900 10800 2900
+Wire Wire Line
+	10950 2800 10800 2800
+Entry Wire Line
+	10950 2800 11050 2900
+Entry Wire Line
+	10950 2900 11050 3000
+Entry Wire Line
+	10950 3000 11050 3100
+Entry Wire Line
+	10950 3100 11050 3200
+Entry Wire Line
+	10950 3200 11050 3300
+Entry Wire Line
+	10950 3300 11050 3400
+Entry Wire Line
+	10950 3400 11050 3500
+Entry Wire Line
+	10950 3500 11050 3600
+Wire Bus Line
+	11050 3800 10850 3800
+Text Label 10850 3800 0    50   ~ 0
+DBUS
+Text Label 10150 3300 0    50   ~ 0
+A0
+Text Label 10150 3400 0    50   ~ 0
+A1
+Text Label 10150 3500 0    50   ~ 0
+A2
+Text Label 10150 3600 0    50   ~ 0
+A3
+Text Label 10150 3700 0    50   ~ 0
+A4
+Text Label 10150 3800 0    50   ~ 0
+A5
+Text Label 10150 3900 0    50   ~ 0
+A6
+Text Label 10150 4000 0    50   ~ 0
+A7
+Text Label 10150 4100 0    50   ~ 0
+A8
+Text Label 10150 4200 0    50   ~ 0
+A9
+Text Label 10150 4300 0    50   ~ 0
+A10
+Text Label 10150 4400 0    50   ~ 0
+A11
+Text Label 10150 4500 0    50   ~ 0
+A12
+Text Label 10150 4600 0    50   ~ 0
+A13
+Text Label 10950 2800 2    50   ~ 0
+D0
+Text Label 10950 2900 2    50   ~ 0
+D1
+Text Label 10950 3000 2    50   ~ 0
+D2
+Text Label 10950 3100 2    50   ~ 0
+D3
+Text Label 10950 3200 2    50   ~ 0
+D4
+Text Label 10950 3300 2    50   ~ 0
+D5
+Text Label 10950 3400 2    50   ~ 0
+D6
+Text Label 10950 3500 2    50   ~ 0
+D7
+Wire Wire Line
+	10300 2700 10150 2700
+Text Label 10150 2700 0    50   ~ 0
++5V
+Wire Wire Line
+	10950 2700 10800 2700
+Text Label 10950 2700 2    50   ~ 0
+GND
+Text Label 10100 2800 0    50   ~ 0
+E
+Text Label 10100 2900 0    50   ~ 0
+R~W
+Text Label 10100 3000 0    50   ~ 0
+~R
+Text Label 10100 3100 0    50   ~ 0
+~W
+Text Label 10100 3200 0    50   ~ 0
+~BRAM
+Wire Wire Line
+	10100 2800 10300 2800
+Wire Wire Line
+	10300 2900 10100 2900
+Wire Wire Line
+	10100 3000 10300 3000
+Wire Wire Line
+	10300 3100 10100 3100
+Wire Wire Line
+	10100 3200 10300 3200
 Wire Bus Line
 	2650 4500 2650 4650
 Wire Bus Line
@@ -2185,7 +2364,11 @@ Wire Bus Line
 Wire Bus Line
 	6250 4300 6250 5200
 Wire Bus Line
+	11050 2900 11050 3800
+Wire Bus Line
 	4650 4300 4650 5700
+Wire Bus Line
+	10050 3400 10050 4900
 Wire Bus Line
 	2750 750  2750 3000
 Wire Bus Line
